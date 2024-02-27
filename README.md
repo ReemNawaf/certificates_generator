@@ -16,7 +16,7 @@ This project is designed to streamline the process of generating and sending cou
 ## Setup
 
 1. Clone the repository:
-    git clone https://github.com/reemnawaf/certificates_generator.git
+    git clone git@github.com:ReemNawaf/certificates_generator.git
 
 2. Install the required dependencies:
 3. Prepare your Excel file:
