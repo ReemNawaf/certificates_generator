@@ -1,0 +1,7 @@
+.env
+
+certificates_lib/generated_certificates/ara/
+certificates_lib/generated_certificates/eng/
+
+certificates_lib/certificate_templates
+

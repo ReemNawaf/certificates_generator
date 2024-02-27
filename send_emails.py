@@ -1,7 +1,8 @@
 """
 Script for Sending Emails With Attachments
 """
-
+import os
+from dotenv import find_dotenv, load_dotenv
 import smtplib
 from email.mime.image import MIMEImage
 from email.mime.text import MIMEText
@@ -16,12 +17,14 @@ from bidi.algorithm import get_display
 smtp_port = 587                 # Standard secure SMTP port
 smtp_server = "smtp.gmail.com"  # Google SMTP Server
 
-# Define the password (better to reference externally)
-pswd = "aahpqsbbtbgrwhfa"
-
 
 # Define the email function
 def send_emails(participates):
+
+    dotenv_path = find_dotenv()
+    load_dotenv(dotenv_path)
+
+    pswd = os.getenv("GMAIL_APP_PASS")
 
     for index, person in enumerate(participates):
 

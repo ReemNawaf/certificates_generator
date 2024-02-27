@@ -11,7 +11,6 @@ import certificates_lib.helper as helper
 def generate_certificates(participates):
     
     for index, person in enumerate(participates):
-        print('--------', index, person)
         file_name = p_name = person['name']
         
         if(person['lang'] == cons.ENG):
@@ -24,7 +23,7 @@ def generate_certificates(participates):
             DES = cons.ARA
             LOC = cons.ARA_LOC
             FONT = cons.ARA_FONT
-            IMG_PATH = 'certificate_templates/certificate-arabic.png'
+            IMG_PATH = 'certificates_lib/certificate_templates/certificate-arabic.png'
             p_name = arabic_reshaper.reshape(p_name)
             p_name = get_display(p_name)  
             
